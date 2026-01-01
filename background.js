@@ -1,5 +1,6 @@
-const link = document.querySelector('.css-1adjw8a');
-link.addEventListener('click', function (e) {
+document.body.addEventListener('click', function(e) {
+  if (e.target.matches('.css-1adjw8a.e13821ld2')) {
     e.preventDefault();
-    link.setAttribute('href', '#');
-  });
+    e.target.href = '#';
+  }
+});
